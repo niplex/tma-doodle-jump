@@ -8,22 +8,22 @@ body {
 }
 
 .container {
-	height: 552px;
-	width: 422px;
+	height: 640px;
+	width: 360px;
 	position: relative;
 	margin: 20px auto 0; 
 	overflow: hidden;
 }
 
 canvas {
-	height: 552px;
-	width: 422px;
+	height: 640px;
+	width: 360px;
 	display: block;
 	background: url(https://i.imgur.com/Y0BMP.png) top left;
 }
 
 #scoreBoard {
-	width: 420px;
+	width: 358px;
 	height: 50px;
 	background: rgba(182, 200, 220, 0.7);
 	position: absolute;
@@ -78,7 +78,7 @@ h3 a {color: #5a5816}
 	text-decoration: none;
 	position: absolute;
 	left: 50%;
-	bottom: 50px;
+	bottom: 120px;
 	margin-left: -53px;
 }
 
