@@ -242,6 +242,22 @@ function init() {
 			if (player.vy < -7 && player.vy > -15) player.dir = "right_land";
 		}
 
+		// Adding touch controls
+		canvas.addEventListener("touchstart", function(e) {
+			var touchX = e.pageX;
+			if (touchX > width / 2) {
+				dir = "right";
+				player.isMovingRight = true;
+			} else {
+				dir = "left";
+				player.isMovingLeft = true;
+			}
+		})
+		canvas.addEventListener("touchend", function(e) {
+			player.isMovingLeft = false;
+			player.isMovingRight = false;
+		});
+
 		//Adding keyboard controls
 		document.onkeydown = function(e) {
 			var key = e.keyCode;
